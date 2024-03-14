@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ *  Contains install and update functions for Y Layout Builder - Hero module.
+ */
+
+/**
+ * Implements hook_update_N().
+ */
+function lb_hero_update_9001(&$sandbox) {
+ $path = \Drupal::service('extension.list.module')->getPath('lb_carousel') . '/config/optional';
+  /** @var \Drupal\config_import\ConfigImporterService $config_importer */
+  $config_importer = \Drupal::service('config_import.importer');
+  $config_importer->setDirectory($path);
+  $config_importer->importConfigs([
+   'image.style.hero_banner_desktop',
+   'image.style.hero_banner_mobile',
+  ]);
+}
+
+/**
+ * Implements hook_update_N().
+ * Rename label block
+ */
+function lb_hero_update_9002(&$sandbox) {
+ $path = \Drupal::service('extension.list.module')->getPath('lb_hero') . '/config/optional';
+  /** @var \Drupal\config_import\ConfigImporterService $config_importer */
+  $config_importer = \Drupal::service('config_import.importer');
+  $config_importer->setDirectory($path);
+  $config_importer->importConfigs([
+    'block_content.type.lb_hero',
+  ]);
+}

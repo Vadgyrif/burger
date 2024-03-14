@@ -1,0 +1,13 @@
+{
+    "name": "drupal/lb_hero",
+    "description": "Helper module for the custom \"Banner\" block type",
+    "type": "drupal-module",
+    "require": {
+        "ycloudyusa/y_lb": "^3.0",
+        "php": ">=8.1",
+        "drupal/entity_browser": "^2",
+        "drupal/twig_tweak": "^2 || ^3.1"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev"
+}

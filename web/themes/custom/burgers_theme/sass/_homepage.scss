@@ -1,0 +1,13 @@
+#main-wrapper{
+    min-height: 1000px;
+}
+
+#block-burgers-theme-banner{
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    //background-color: #3181b6;
+    //background: center / contain no-repeat url("../images/banner.png"),
+    background: url("../images/banner.png") top center / 100%  no-repeat  ;
+
+}   

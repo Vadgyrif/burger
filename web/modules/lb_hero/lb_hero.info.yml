@@ -1,0 +1,17 @@
+name: 'Y Layout Builder - Hero Banner'
+description: 'Helper module for the custom "Hero Banner" block type.'
+type: module
+core_version_requirement: ^8 || ^9 || ^10
+package: 'YMCA Website Services'
+dependencies:
+  - drupal:link
+  - drupal:views
+  - drupal:media
+  - drupal:entity_browser
+  - twig_tweak:twig_tweak
+  - y_lb
+
+# Information added by Drupal.org packaging script on 2023-12-21
+version: '1.2.4'
+project: 'lb_hero'
+datestamp: 1703175524
